@@ -6,22 +6,23 @@ return
 Send {LWin Down}{Ctrl Down}{Right}{Ctrl Up}{LWin Up}
 return
 
-CapsLock & j::send,{left}
-CapsLock & l::send,{right}
-CapsLock & i::send,{up}
-CapsLock & k::send,{down}
-CapsLock & u::send,{home}
-CapsLock & o::send,{end}
+!j::send,{left}
+!l::send,{right}
+!i::send,{up}
+!k::send,{down}
+!h::send,{home}
+!;::send,{end}
 
-CapsLock & n::send,{Ctrl Down}{left}{Ctrl Up}
-CapsLock & m::send,{Ctrl Down}{right}{Ctrl Up}
+!u::send,{Ctrl Down}{left}{Ctrl Up}
+!o::send,{Ctrl Down}{right}{Ctrl Up}
 
 !n::WinMinimize,A
 !m::WinMaximize,A
-!q::WinClose,A
+!w::WinClose,A
 !r::WinRestore,A
+!t::winset, AlwaysOnTop,, A
 
 
-!i::run, iPython.exe
-!c::run, control
+
+
 !d::run, cmder.exe
